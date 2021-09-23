@@ -1,0 +1,270 @@
+/* ====================================> GOOGLE FONTS <=================================== */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Merriweather+Sans:wght@300;400&family=Montserrat:wght@300;400;600;700;900&display=swap");
+
+/* ============================> DECLARING ALL CSS VARIABLES <============================ */
+:root {
+  --primary-font: "Merriweather Sans", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  --teritiary-font: "Libre Barcode 39 Text", cursive;
+  --faded-black: rgba(0, 0, 0, 0.5);
+  --pure-black: #000;
+  --faded-white: rgba(255, 255, 255, 0.75);
+  --pure-white: rgba(255, 255, 255);
+  font-family: var(--secondary-font);
+  font-weight: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =====================> Navigation bar at the top <========================= */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--faded-black);
+  padding: 0;
+}
+
+nav ul :first-child {
+  box-sizing: border-box;
+  background: #1f1c2c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #928dab,
+    #1f1c2c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #928dab,
+    #2727279f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  align-self: center;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+nav ul li {
+  margin-left: 70px;
+}
+
+/* ==========================> Page 1 <============================= */
+
+section.page1 h1 {
+  font-size: 170px;
+  margin: 0;
+  padding-left: 50px;
+}
+
+section.page1 hr {
+  border: 0;
+  border-top: 5px solid black;
+  width: 20%;
+  margin: 0 60px;
+}
+
+article.story {
+  width: 80vw;
+  display: flex;
+  margin: 50px;
+}
+
+img.car1 {
+  width: 35vw;
+  align-content: center;
+  margin-left: 50px;
+}
+
+article.story-left {
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 40vw;
+}
+
+article.story-left h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+article.story-left a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--faded-black);
+}
+
+article.story-left p {
+  font-size: 1.2rem;
+  color: var(--pure-black);
+}
+
+/* =======================================> PAGE 2 <======================================= */
+
+section.page2 {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+section.page2 h1 {
+  font-size: 130px;
+  margin: 0;
+}
+
+section.page2 hr {
+  border: 0;
+  border-top: 5px solid black;
+  width: 25%;
+  margin: 0 0px;
+}
+
+article.categorie {
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  width: 80vw;
+}
+
+article.categorie img {
+  width: 100%;
+  transition: transform 1s, border-radius 1s, z-index 1s, box-shadow 1s;
+}
+
+article.categorie img:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px var(--faded-black);
+}
+
+/* ================================> PAGE 3 <================================ */
+
+section.page3 {
+  margin: 50px 0;
+  width: 80vw;
+}
+section.page3 h1 {
+  font-size: 150px;
+  margin: 0;
+}
+
+section.page3 hr {
+  border: 0;
+  border-top: 5px solid black;
+  width: 30%;
+  margin: 10px 10px;
+}
+
+article.blog-post-hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+article.blog-post img {
+  width: 30vw;
+  padding-bottom: 20px;
+}
+
+article.blog-post h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+article.blog-post a {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--faded-black);
+}
+
+article.blog-post {
+  width: 30vw;
+  padding: 20px 40px;
+}
+
+/* ================================> PAGE 3 <================================ */
+
+section.page4 {
+  margin: 50px 0;
+  width: 80vw;
+}
+section.page4 h1 {
+  font-size: 150px;
+  margin: 0;
+}
+
+section.page4 hr {
+  border: 0;
+  border-top: 5px solid black;
+  width: 30%;
+  margin: 10px 10px;
+}
+
+section.page4 p {
+  position: relative;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--faded-black);
+}
+
+article#about {
+  height: 260px;
+  width: 430px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.212);
+  backdrop-filter: blur(5px);
+  position: relative;
+  top: -130px;
+  left: 550px;
+  z-index: 1;
+}
+
+article#about p {
+  padding: 0% 50px;
+  color: var(--pure-white);
+  margin: 0;
+}
+
+article#about h3 {
+  color: var(--faded-white);
+  font-weight: 600;
+  font-size: 17px;
+  padding: 20px 50px 10px 50px;
+  margin: 0;
+}
+
+section.page4 p.middle {
+  margin-top: -100px;
+  position: relative;
+}
+
+section.page4 a {
+  text-decoration: none;
+  color: var(--pure-black);
+  font-family: var(--teritiary-font);
+  font-size: 45px;
+}
