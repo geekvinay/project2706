@@ -26,6 +26,16 @@ img:hover {
   cursor: pointer;
 }
 
+body::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #6D8299;
+}
+
+body::selection {
+  color: #fff;
+  background: #6D8299;
+}
+
 /* =====================> Navigation bar at the top <========================= */
 nav ul {
   list-style-type: none;
